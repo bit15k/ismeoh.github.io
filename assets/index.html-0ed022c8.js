@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b3156306","path":"/tag/big/","title":"big 标签","lang":"zh-CN","frontmatter":{"title":"big 标签","feed":false,"sitemap":false,"blog":{"type":"category","name":"big","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{e as data};
