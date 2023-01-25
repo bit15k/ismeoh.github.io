@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-3ceeab45","path":"/tag/%E5%A4%A7/","title":"大 标签","lang":"zh-CN","frontmatter":{"title":"大 标签","feed":false,"sitemap":false,"blog":{"type":"category","name":"大","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{e as data};

@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-3e80ec60","path":"/tag/curly/","title":"curly 标签","lang":"zh-CN","frontmatter":{"title":"curly 标签","feed":false,"sitemap":false,"blog":{"type":"category","name":"curly","key":"tag"},"layout":"BlogCategory"},"headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{e as data};
