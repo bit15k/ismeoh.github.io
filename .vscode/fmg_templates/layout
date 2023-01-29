@@ -1,0 +1,10 @@
+---
+# 布局常见配置
+date: %yyyy%-%mm%-%dd% %hh%:%ii%:%ss% # 创建时间
+index: false # 控制该页面是否出现在侧边栏
+comment: false # 是否开启评论
+---
+
+
+
+内容少时不设定
