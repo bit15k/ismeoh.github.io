@@ -1,4 +1,4 @@
-import{_ as i,W as e,X as s,Y as n}from"./framework-c3f8a599.js";const t={},l=n(`<h1 id="git代理配置" tabindex="-1"><a class="header-anchor" href="#git代理配置" aria-hidden="true">#</a> Git代理配置</h1><p>配置代理</p><p><strong>临时添加与全局添加</strong>命令</p><div class="language-xml line-numbers-mode" data-ext="xml"><pre class="language-xml"><code>git config --global http.proxy &#39;socks5://127.0.0.1:socks5端口号&#39;
+import{_ as i,V as e,W as s,X as n}from"./framework-182bcb23.js";const t={},l=n(`<h1 id="git代理配置" tabindex="-1"><a class="header-anchor" href="#git代理配置" aria-hidden="true">#</a> Git代理配置</h1><p>配置代理</p><p><strong>临时添加与全局添加</strong>命令</p><div class="language-xml line-numbers-mode" data-ext="xml"><pre class="language-xml"><code>git config --global http.proxy &#39;socks5://127.0.0.1:socks5端口号&#39;
  
 git config --global https.proxy &#39;socks5://127.0.0.1:socks5端口号&#39;
 git config --global http.proxy &#39;http://127.0.0.1:http端口号&#39;
