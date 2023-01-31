@@ -1,1 +1,0 @@
-import{_ as t,V as a,W as s,Y as e,$ as o}from"./framework-182bcb23.js";const _={},c=e("h1",{id:"_1",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#_1","aria-hidden":"true"},"#"),o(" 1")],-1),n=[c];function r(d,i){return a(),s("div",null,n)}const l=t(_,[["render",r],["__file","01new-post.html.vue"]]);export{l as default};
