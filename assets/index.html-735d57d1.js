@@ -1,0 +1,1 @@
+import{_ as t,V as s,W as a,Y as e,$ as n}from"./framework-182bcb23.js";const c={},o=e("h1",{id:"js函数",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#js函数","aria-hidden":"true"},"#"),n(" JS函数")],-1),r=e("p",null,"内容少时不设定",-1),_=[o,r];function d(i,l){return s(),a("div",null,_)}const f=t(c,[["render",d],["__file","index.html.vue"]]);export{f as default};
