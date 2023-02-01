@@ -1,1 +1,0 @@
-import{_ as t,W as a,X as n,Z as e,$ as s}from"./framework-11f0740a.js";const c={},o=e("h1",{id:"模块",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#模块","aria-hidden":"true"},"#"),s(" 模块")],-1),r=e("p",null,"内容少时不设定",-1),_=[o,r];function d(i,l){return a(),n("div",null,_)}const f=t(c,[["render",d],["__file","index.html.vue"]]);export{f as default};
