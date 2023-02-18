@@ -1,1 +1,0 @@
-import{_ as t,X as a,Y as n,$ as e,a1 as s}from"./framework-44854a8b.js";const c={},o=e("h1",{id:"技术文档整理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#技术文档整理","aria-hidden":"true"},"#"),s(" 技术文档整理")],-1),r=e("p",null,"内容少时不设定",-1),_=[o,r];function d(i,l){return a(),n("div",null,_)}const f=t(c,[["render",d],["__file","index.html.vue"]]);export{f as default};
