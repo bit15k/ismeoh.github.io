@@ -1,1 +1,0 @@
-import{_ as t,X as a,Y as s,$ as e,a1 as c}from"./framework-5ccfa493.js";const n={},r=e("h1",{id:"js变量、作用域及内存",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#js变量、作用域及内存","aria-hidden":"true"},"#"),c(" JS变量、作用域及内存")],-1),o=[r];function _(d,i){return a(),s("div",null,o)}const l=t(n,[["render",_],["__file","index.html.vue"]]);export{l as default};
