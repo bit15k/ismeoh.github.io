@@ -1,1 +1,0 @@
-import{_ as t,X as a,Y as c,$ as e,a0 as n}from"./framework-ca96282b.js";const s={},o=e("h1",{id:"c-数据类型和表达式",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#c-数据类型和表达式","aria-hidden":"true"},"#"),n(" C++数据类型和表达式")],-1),r=e("p",null,"内容少时不设定",-1),_=[o,r];function d(i,l){return a(),c("div",null,_)}const f=t(s,[["render",d],["__file","index.html.vue"]]);export{f as default};
