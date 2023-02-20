@@ -1,4 +1,4 @@
-import{_ as n,X as s,Y as a,a1 as e}from"./framework-ca96282b.js";const i={},t=e(`<h1 id="函数" tabindex="-1"><a class="header-anchor" href="#函数" aria-hidden="true">#</a> 函数</h1><p>函数就是指具体的功能封装到一个地方，用到时候可以随时调用</p><h2 id="分类" tabindex="-1"><a class="header-anchor" href="#分类" aria-hidden="true">#</a> 分类</h2><p>对于函数来讲有很多的类型，根据不同的角度有不同的分法</p><p>从 <strong>用户</strong>角度来讲，分为两类</p><ul><li><strong>系统函数</strong> 是指由编译系统自身带的或者系统库所提供的函数，直接拿来用即可</li><li><strong>自定义函数</strong>是指自己编写的实现具体功能的函数</li></ul><p>从 <strong>函数的形式</strong>来讲，也就是函数的样子，可以分为两类</p><ul><li><strong>有参数函数</strong>是指可以将一些变量传入</li><li><strong>无参数函数</strong>是指不需要外部传入一些变量</li></ul><h2 id="无参和有参函数" tabindex="-1"><a class="header-anchor" href="#无参和有参函数" aria-hidden="true">#</a> 无参和有参函数</h2><h3 id="无参函数基本形式" tabindex="-1"><a class="header-anchor" href="#无参函数基本形式" aria-hidden="true">#</a> 无参函数基本形式</h3><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code>类型标识符 函数名<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">void</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+import{_ as n,X as s,Y as a,a1 as e}from"./framework-ca96282b.js";const i={},d=e(`<h1 id="函数" tabindex="-1"><a class="header-anchor" href="#函数" aria-hidden="true">#</a> 函数</h1><p>函数就是指具体的功能封装到一个地方，用到时候可以随时调用</p><h2 id="分类" tabindex="-1"><a class="header-anchor" href="#分类" aria-hidden="true">#</a> 分类</h2><p>对于函数来讲有很多的类型，根据不同的角度有不同的分法</p><p>从 <strong>用户</strong>角度来讲，分为两类</p><ul><li><strong>系统函数</strong> 是指由编译系统自身带的或者系统库所提供的函数，直接拿来用即可</li><li><strong>自定义函数</strong>是指自己编写的实现具体功能的函数</li></ul><p>从 <strong>函数的形式</strong>来讲，也就是函数的样子，可以分为两类</p><ul><li><strong>有参数函数</strong>是指可以将一些变量传入</li><li><strong>无参数函数</strong>是指不需要外部传入一些变量</li></ul><h2 id="无参和有参函数" tabindex="-1"><a class="header-anchor" href="#无参和有参函数" aria-hidden="true">#</a> 无参和有参函数</h2><h3 id="无参函数基本形式" tabindex="-1"><a class="header-anchor" href="#无参函数基本形式" aria-hidden="true">#</a> 无参函数基本形式</h3><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code>类型标识符 函数名<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">void</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     声明部分
     语句
 <span class="token punctuation">}</span>
@@ -38,4 +38,33 @@ sum(sum(2,3));
 int add(int a,int b){
 
 }
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>函数原型</strong>的写法，可以不加变量名即<code>sum(int,int)</code></p><p>什么时候不使用函数原型？函数若在调用之前已经定义，可以不用函数原型</p>`,36),l=[t];function c(d,p){return s(),a("div",null,l)}const o=n(i,[["render",c],["__file","34-函数.html.vue"]]);export{o as default};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>函数原型</strong>的写法，可以不加变量名即<code>sum(int,int)</code></p><p>什么时候不使用函数原型？函数若在调用之前已经定义，可以不用函数原型</p><h2 id="内置函数" tabindex="-1"><a class="header-anchor" href="#内置函数" aria-hidden="true">#</a> 内置函数</h2><p><strong>内置函数</strong>可以理解成将函数拿来插入到当前调用的位置，这时需要理解与普通函数调用的区别</p><p>普通函数调用如下</p><p><img src="https://cdn.jsdelivr.net/gh/ismeoh/imgchr//imgs/普通函数调用流程对比内置函数调用.png" alt="普通函数调用流程对比内置函数调用"></p><p><strong>定义内置函数</strong>是指在函数定义时增加<code>inline</code>关键字</p><p>如下所示</p><div class="language-C line-numbers-mode" data-ext="C"><pre class="language-C"><code>
+int main(){
+    int c = 1, d = 2;
+    inlne int add(int a,int b); // 函数原型
+    add(c,d); // 此时调用，函数并未定义，必须使用函数原型
+}
+inlne int add(int a,int b){
+
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>不要忘记函数原型也要加</strong>.<br><strong>内置函数不允许有复杂的控制语句，否则会自动转换成普通函数</strong></p><h2 id="函数重载" tabindex="-1"><a class="header-anchor" href="#函数重载" aria-hidden="true">#</a> 函数重载</h2><p><strong>函数重载</strong>就是指一物多用，一个函数可以用于多种用途，即函数可以根据其 <strong>形参类型</strong>、<strong>形参顺序</strong>、<strong>形参个数</strong> 定义多个同名函数,当函数调用时会自动根据这几个条件匹配相应的同名函数</p><p>例如</p><div class="language-C line-numbers-mode" data-ext="C"><pre class="language-C"><code>int add(int a,int b){
+
+}
+int add(double a,double b){
+
+}
+int add(int a,int b,int c){
+
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="函数模板" tabindex="-1"><a class="header-anchor" href="#函数模板" aria-hidden="true">#</a> 函数模板</h2><p><strong>函数模板</strong>是指定义一个不指定 <strong>函数类型</strong>和 <strong>形参类型</strong>的函数，系统会根据实参自动实现形参和函数类型</p><p>例如</p><div class="language-C line-numbers-mode" data-ext="C"><pre class="language-C"><code>#include &lt;iostream&gt; 
+using namespace std;
+template &lt;typename T&gt;
+int main(){
+    int c = 1, d = 2;
+    T add(T a,T b);
+    add(c,d); 
+}
+T add(T a,T b){
+
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面可以归纳为<br> 先定义虚拟类型，语法<code>template &lt;typename 虚拟类型名&gt;</code>或使用另外一个定义格式<code>template &lt;class 虚拟类型名&gt;</code>，这里的虚拟类型名可以随便起，一般用T</p><p>然后将函数定义中的类型名和形参类型换成你所定义的虚拟类型名</p><p>NF</p>`,55),t=[d];function l(r,c){return s(),a("div",null,t)}const p=n(i,[["render",l],["__file","34-函数.html.vue"]]);export{p as default};
