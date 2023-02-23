@@ -1,1 +1,0 @@
-import{_ as e,X as _,Y as t,$ as c}from"./framework-ca96282b.js";const o={},s=c("p",null,"内容少时不设定",-1),n=[s];function r(a,l){return _(),t("div",null,n)}const f=e(o,[["render",r],["__file","布局模板.html.vue"]]);export{f as default};
